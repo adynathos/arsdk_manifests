@@ -3,6 +3,7 @@
  <!--parrot github remote server -->
  <remote name="github" fetch="https://github.com/Parrot-Developers/"/>
  <default remote="github" revision="master" sync-j="4"/>
+ <remote name="github_adynathos" fetch="https://github.com/adynathos/"/>
 
 <!-- dragon build  -->
  <project name="dragon_build" path="build/dragon_build">
@@ -21,7 +22,7 @@
  <project name="ARSDKBuildUtils" path="packages/ARSDKBuildUtils"/>
  <project name="ARSDK3" path="packages/ARSDK3"/>
  <project name="libARCommands" path="packages/libARCommands"/>
- <project name="libARController" path="packages/libARController"/>
+ <project name="libARController" path="packages/libARController" remote="github_adynathos" />
  <project name="libARDataTransfer" path="packages/libARDataTransfer"/>
  <project name="libARDiscovery" path="packages/libARDiscovery"/>
  <project name="libARMavlink" path="packages/libARMavlink"/>
